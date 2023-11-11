@@ -1,0 +1,151 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url(./assets/rayas.jpg), no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container__Navbar{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-top: 1rem;
+  background: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.384));
+  box-shadow: rgba(225, 174, 65, 0.74) 1rem 0 1.5rem 0.3rem;
+  border-bottom: rgba(252, 252, 252, 0.692) solid 1px;
+  padding-bottom: 0.5rem;
+}
+
+.container__Navbar--logo{
+  display: flex;
+  align-items: center;
+}
+
+.container__Navbar--logo a img{
+  width: 4rem;
+  height: 3rem;
+  border-radius: 50px;
+  margin-left: 1rem;
+  margin-right: 1.5rem;
+}
+
+.container__Navbar--logo p{
+  padding-right: 2rem;
+  font-size: 2rem;
+  color: white;
+}
+
+.container__Navbar--links ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: end;
+  align-items: center;
+  list-style: none;
+  padding: 0.5rem;
+}
+
+.container__Navbar--links ul a{
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: white;
+  font-weight: 600;
+}
+
+.container__Navbar--links ul a:hover{
+  box-shadow: #5E41E0 0 0 1rem 0.2rem;
+  border-radius: 25px;
+}
+
+.container__Productos h1{
+  text-align: center;
+  background: linear-gradient(rgba(151, 151, 151, 0.397), rgba(117, 117, 117, 0.315));
+  border: solid 1px rgba(146, 141, 141, 0.438);
+  padding: 2rem;
+  margin: 2rem;
+  margin-top: 4rem;
+  border-radius: 15px;
+  color: white;
+}
+
+.container_footer{
+  background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.993));
+  box-shadow: #e1ae41bd 1rem 0 1.5rem 0.3rem;
+  border-top: rgba(252, 252, 252, 0.692) solid 1px;
+  color: white;
+  padding-top: 2rem;
+}
+
+.container_footer  p {
+  text-align: center;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
+}
+
+.container_footer p a {
+  color: whitesmoke;
+}
+
+.container_footer--redes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container_footer--redes svg{
+  padding: 0.5rem;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.oculto{
+  display: none;
+}
+
+.mostrar{
+  display: block;
+}
+
+.container_producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_producto img{
+  width: 50vh;
+  padding: 1rem;
+  border-radius: 35px;
+}
+
+.container_producto button{
+  padding: 0.7rem;
+  margin: 1rem;
+  border-radius: 16px;
+  background: linear-gradient(rgba(0, 0, 0, 0.575), rgba(0, 0, 0, 0.993));
+  color: white;
+}
+
+.container_producto button:hover{
+  text-align: center;
+  color: white;
+  box-shadow: #5E41E0 0 0 1rem 0.2rem;
+}
+
+.mostrar p{
+  color: white;
+  text-align: center;
+  padding: 0.3rem;
+}
+
+.mostrar p span {
+  font-weight: bolder;
+  
+}
