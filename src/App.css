@@ -9,11 +9,13 @@ body{
   background-size: cover;
   background-attachment: fixed;
 }
+
+/* Navbar */
 .container__Navbar{
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   padding-top: 1rem;
+  padding-right: 1rem;
   background: linear-gradient(rgba(0, 0, 0, 0.705), rgba(0, 0, 0, 0.384));
   box-shadow: rgba(225, 174, 65, 0.74) 1rem 0 1.5rem 0.3rem;
   border-bottom: rgba(252, 252, 252, 0.692) solid 1px;
@@ -39,11 +41,12 @@ body{
   color: white;
 }
 
+.container__Navbar--links button{
+  display: none;
+}
+
 .container__Navbar--links ul{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: end;
-  align-items: center;
   list-style: none;
   padding: 0.5rem;
 }
@@ -61,6 +64,7 @@ body{
   border-radius: 25px;
 }
 
+/* Productos */
 .container__Productos h1{
   text-align: center;
   background: linear-gradient(rgba(151, 151, 151, 0.397), rgba(117, 117, 117, 0.315));
@@ -72,6 +76,7 @@ body{
   color: white;
 }
 
+/* Footer */
 .container_footer{
   background: linear-gradient(rgba(0, 0, 0, 0.712), rgba(0, 0, 0, 0.993));
   box-shadow: #e1ae41bd 1rem 0 1.5rem 0.3rem;
@@ -136,7 +141,7 @@ body{
 .container_producto button:hover{
   text-align: center;
   color: white;
-  box-shadow: #5E41E0 0 0 1rem 0.2rem;
+  box-shadow: #5f42e0 0 0 1rem 0.2rem;
 }
 
 .mostrar p{
@@ -148,4 +153,42 @@ body{
 .mostrar p span {
   font-weight: bolder;
   
+}
+
+
+/* Mediaqueries */
+@media (max-width: 720px){
+  .container__Navbar--links button{
+    display: block;
+    cursor: pointer;
+    background-color: #e1ae41a1;
+  }
+
+  .container__Navbar--links ul {
+    display:none; 
+    cursor: pointer;
+    flex-direction: column;
+    position: absolute;
+    top: 5rem; 
+    right: 0;
+    width: 25vh;
+    padding: 0rem;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.384));
+    margin-right: 0.5rem;
+    border-radius: 0px 0px 16px 16px;
+  }
+
+  .container__Navbar--links.open ul {
+    display: block;
+  }
+
+  .container__Navbar--links ul li{
+    border-bottom: solid 1px #5e41e0c4;
+  }
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
 }
